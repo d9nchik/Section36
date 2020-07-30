@@ -12,7 +12,14 @@ public class EncodingFormatController {
     private TextArea textArea;
 
     public void show() {
+        textArea.clear();
         int symbol = Integer.parseInt(startSymbol.getText(), 16);
-        textArea.setText((char) symbol + "");
+        for (int i = 0; i < 20; i++) {
+            StringBuilder line = new StringBuilder(Integer.toHexString(symbol));
+            for (int j = 0; j < 16; j++) {
+                line.append(" ").append((char) symbol++);
+            }
+            textArea.appendText(line.append("\n").toString());
+        }
     }
 }

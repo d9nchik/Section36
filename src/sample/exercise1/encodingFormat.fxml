@@ -26,7 +26,11 @@
     </top>
     <center>
         <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-            <TextArea fx:id="textArea" editable="false" wrapText="true"/>
+            <TextArea fx:id="textArea" editable="false">
+                <font>
+                    <Font size="18.0"/>
+                </font>
+            </TextArea>
         </ScrollPane>
     </center>
 </BorderPane>
