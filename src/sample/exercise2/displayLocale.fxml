@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-      minWidth="-Infinity"
-      prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2">
+      minWidth="-Infinity" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.2"
+      fx:controller="sample.exercise2.DisplayLocaleController">
     <padding>
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
@@ -17,25 +17,25 @@
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date:"/>
         <TextField fx:id="date" editable="false"/>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time:"/>
-        <TextField fx:id="time"/>
+        <TextField fx:id="time" editable="false"/>
     </HBox>
     <HBox prefWidth="200.0" spacing="10.0">
         <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
         </padding>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Locale:"/>
-        <ComboBox fx:id="locale" prefWidth="150.0"/>
+        <ComboBox fx:id="locale" onAction="#update" prefWidth="150.0"/>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone:"/>
-        <ComboBox fx:id="timeZone" prefWidth="150.0"/>
+        <ComboBox fx:id="timeZone" onAction="#update" prefWidth="150.0"/>
     </HBox>
     <HBox alignment="CENTER" prefWidth="200.0">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Style:"/>
-        <ComboBox fx:id="dataStyle" prefWidth="150.0"/>
+        <ComboBox fx:id="dataStyle" onAction="#update" prefWidth="150.0"/>
         <Text lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Style:">
             <HBox.margin>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
             </HBox.margin>
         </Text>
-        <ComboBox fx:id="timeStyle" prefWidth="150.0"/>
+        <ComboBox fx:id="timeStyle" onAction="#update" prefWidth="150.0"/>
     </HBox>
 </VBox>
