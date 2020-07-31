@@ -6,17 +6,18 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="362.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+            fx:controller="sample.exercise4.ShowLocZoneController">
     <center>
         <ScrollPane BorderPane.alignment="CENTER">
-            <TextArea prefHeight="300.0" prefWidth="600.0"/>
+            <TextArea fx:id="textArea" prefHeight="300.0" prefWidth="600.0"/>
         </ScrollPane>
     </center>
     <bottom>
         <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
-            <Button mnemonicParsing="false" text="All Locales"/>
-            <Button mnemonicParsing="false" text="All Time Zones"/>
+            <Button mnemonicParsing="false" onAction="#showLocales" text="All Locales"/>
+            <Button mnemonicParsing="false" onAction="#showZones" text="All Time Zones"/>
         </HBox>
     </bottom>
     <padding>
