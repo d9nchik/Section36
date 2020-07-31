@@ -18,7 +18,7 @@ import java.util.TimeZone;
 public class WorldClock extends BorderPane {
     private final ClockPane clock = new ClockPane(); // Still clock
     private final Label lblDigitTime = new Label();
-    private TimeZone timeZone = TimeZone.getTimeZone("EST");
+    private TimeZone timeZone = TimeZone.getDefault();
     private Locale locale = Locale.getDefault();
 
     public WorldClock() {
