@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-            minWidth="-Infinity" prefHeight="362.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+            minWidth="-Infinity" prefHeight="362.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/11.0.2"
             fx:controller="sample.exercise4.ShowLocZoneController">
     <center>
         <ScrollPane BorderPane.alignment="CENTER">
-            <TextArea fx:id="textArea" prefHeight="300.0" prefWidth="600.0"/>
+            <TextArea fx:id="textArea" editable="false" prefHeight="300.0" prefWidth="600.0"/>
         </ScrollPane>
     </center>
     <bottom>

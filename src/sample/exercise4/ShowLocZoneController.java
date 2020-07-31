@@ -20,6 +20,7 @@ public class ShowLocZoneController {
                 StringBuilder::new, (c, e) -> c.append(e).append("\n"), StringBuilder::append).toString();
         zones = Stream.of(TimeZone.getAvailableIDs()).collect(
                 StringBuilder::new, (c, e) -> c.append(e).append("\n"), StringBuilder::append).toString();
+        showLocales();
     }
 
     @FXML
