@@ -11,6 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import sample.exercise3.CalendarPane;
 
+import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -21,6 +22,9 @@ public class CalendarApp extends Application {
     private final Button btNext = new Button("Next");
     private final ComboBox<String> cboLocales = new ComboBox<>();
     private final Locale[] availableLocales = Locale.getAvailableLocales();
+
+    public CalendarApp() throws IOException {
+    }
 
     public static void main(String[] args) {
         launch(args);
